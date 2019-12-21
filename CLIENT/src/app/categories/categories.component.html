@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div *ngIf="!(user|async)">
+            <p id="haha">
+                En vous connectant, découvrez nos :
+            </p>
+            <div id="conteneur">
+                <div *ngFor="let categorie of categories">
+                    <p class="element" id="haha">
+                        {{categorie}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="user|async">
+            <div id="haha">
+                <p style="text-align: center;" class="element">
+                    Vous êtes connecté : {{user|async}}
+                </p>
+            </div>
+            <div id="conteneur">
+                <div *ngFor="let categorie of categories">
+                    <p style="text-align: center;" class="element">
+                        <input type="button" value="Découvrez nos &quot;{{categorie}}&quot;" (click)="produitsParCategorie(categorie)"/>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </body>
+</html>

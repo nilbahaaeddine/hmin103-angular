@@ -1,0 +1,342 @@
+[
+	{
+    "id":"cas1",
+    "nom" : "Casque 1",
+    "type" : "Casque",
+    "marque" : "Beats",
+    "prix":"50",
+    "image":"../../assets/produits/casques/1.jpg"
+  },
+	{
+    "id":"cas2",
+    "nom" : "Casque 2",
+    "type" : "Casque",
+    "marque" : "Ouest",
+    "prix":"100",
+    "image":"../../assets/produits/casques/2.jpg"
+  },
+
+	{
+    "id":"cas3",
+    "nom" : "Casque 3",
+    "type" : "Casque",
+    "marque" : "Sony",
+    "prix":"150",
+    "image":"../../assets/produits/casques/3.jpg"
+  },
+
+  {
+    "id":"cas4",
+    "nom" : "Casque 4",
+    "type" : "Casque",
+    "marque" : "Philips",
+    "prix":"2000",
+    "image":"../../assets/produits/casques/4.jpg"
+  },
+
+  {
+    "id":"cas5",
+    "nom" : "Casque 5",
+    "type" : "Casque",
+    "marque" : "Elletroca",
+    "prix":"250",
+    "image":"../../assets/produits/casques/5.jpg"
+  },
+
+  {
+    "id":"cas6",
+    "nom" : "Casque 6",
+    "type" : "Casque",
+    "marque" : "Sony",
+    "prix":"10",
+    "image":"../../assets/produits/casques/6.jpg"
+  },
+
+  {
+    "id":"cha1",
+    "nom" : "Chargeur 1",
+    "type" : "Chargeur",
+    "marque" : "Azus",
+    "prix":"50",
+    "image":"../../assets/produits/chargeurs/1.jpg"
+  },
+
+  {
+    "id":"cha2",
+    "nom" : "Chargeur 2",
+    "type" : "Chargeur",
+    "marque" : "Azus",
+    "prix":"100",
+    "image":"../../assets/produits/chargeurs/2.jpg"
+  },
+
+  {
+    "id":"cha3",
+    "nom" : "Chargeur 3",
+    "type" : "Chargeur",
+    "marque" : "Samsung",
+    "prix":"150",
+    "image":"../../assets/produits/chargeurs/3.jpg"
+  },
+
+  {
+    "id":"cha4",
+    "nom" : "Chargeur 4",
+    "type" : "Chargeur",
+    "marque" : "HP",
+    "prix":"200",
+    "image":"../../assets/produits/chargeurs/4.jpg"
+  },
+
+  {
+    "id":"cha5",
+    "nom" : "Chargeur 5",
+    "type" : "Chargeur",
+    "marque" : "Access",
+    "prix":"250",
+    "image":"../../assets/produits/chargeurs/5.jpg"
+  },
+
+  {
+    "id":"cha6",
+    "nom" : "Chargeur 6",
+    "type" : "Chargeur",
+    "marque" : "HP",
+    "prix":"5",
+    "image":"../../assets/produits/chargeurs/6.jpg"
+  },
+
+  {
+    "id":"cha7",
+    "nom" : "Chargeur 7",
+    "type" : "Chargeur",
+    "marque" : "Apple",
+    "prix":"500",
+    "image":"../../assets/produits/chargeurs/7.jpg"
+  },
+
+  {
+    "id":"cla1",
+    "nom" : "Clavier 1",
+    "type" : "Clavier",
+    "marque" : "Asus",
+    "prix":"55",
+    "image":"../../assets/produits/claviers/1.jpg"
+  },
+
+  {
+    "id":"cla2",
+    "nom" : "Clavier 2",
+    "type" : "Clavier",
+    "marque" : "HP",
+    "prix":"5",
+    "image":"../../assets/produits/claviers/2.jpg"
+  },
+
+  {
+    "id":"cla3",
+    "nom" : "Clavier 3",
+    "type" : "Clavier",
+    "marque" : "Apple",
+    "prix":"22",
+    "image":"../../assets/produits/claviers/3.jpg"
+  },
+
+  {
+    "id":"cla4",
+    "nom" : "Clavier 4",
+    "type" : "Clavier",
+    "marque" : "Microsoft",
+    "prix":"66",
+    "image":"../../assets/produits/claviers/4.jpg"
+  },
+
+  {
+    "id":"imp1",
+    "nom" : "Imprimante 1",
+    "type" : "Imprimante",
+    "marque" : "Canon",
+    "prix":"69",
+    "image":"../../assets/produits/imprimantes/1.jpg"
+  },
+
+  {
+    "id":"imp2",
+    "nom" : "Imprimante 2",
+    "type" : "Imprimante",
+    "marque" : "Canon",
+    "prix":"666",
+    "image":"../../assets/produits/imprimantes/2.jpg"
+  },
+
+  {
+    "id":"imp3",
+    "nom" : "Imprimante 3",
+    "type" : "Imprimante",
+    "marque" : "Epson",
+    "prix":"32",
+    "image":"../../assets/produits/imprimantes/3.jpg"
+  },
+
+  {
+    "id":"imp4",
+    "nom" : "Imprimante 4",
+    "type" : "Imprimante",
+    "marque" : "HP",
+    "prix":"1",
+    "image":"../../assets/produits/imprimantes/4.jpg"
+  },
+
+  {
+    "id":"imp5",
+    "nom" : "Imprimante 5",
+    "type" : "Imprimante",
+    "marque" : "HP",
+    "prix":"85",
+    "image":"../../assets/produits/imprimantes/5.jpg"
+  },
+
+  {
+    "id":"con1",
+    "nom" : "Console 1",
+    "type" : "Console",
+    "marque" : "Nintendo",
+    "prix":"20",
+    "image":"../../assets/produits/consoles/1.jpg"
+  },
+
+  {
+    "id":"con2",
+    "nom" : "Console 2",
+    "type" : "Console",
+    "marque" : "PS2",
+    "prix":"40",
+    "image":"../../assets/produits/consoles/2.jpg"
+  },
+
+  {
+    "id":"con3",
+    "nom" : "Console 3",
+    "type" : "Console",
+    "marque" : "PS3",
+    "prix":"500",
+    "image":"../../assets/produits/consoles/3.jpg"
+  },
+
+  {
+    "id":"con4",
+    "nom" : "Console 4",
+    "type" : "Console",
+    "marque" : "Nintendo",
+    "prix":"1000",
+    "image":"../../assets/produits/consoles/4.jpg"
+  },
+
+  {
+    "id":"con5",
+    "nom" : "Console 5",
+    "type" : "Console",
+    "marque" : "PS5",
+    "prix":"555",
+    "image":"../../assets/produits/consoles/5.jpg"
+  },
+
+  {
+    "id":"con6",
+    "nom" : "Console 6",
+    "type" : "Console",
+    "marque" : "XBOX",
+    "prix":"333",
+    "image":"../../assets/produits/consoles/6.jpg"
+  },
+
+  {
+    "id":"con7",
+    "nom" : "Console 7",
+    "type" : "Console",
+    "marque" : "XBOX",
+    "prix":"521",
+    "image":"../../assets/produits/consoles/7.jpg"
+  },
+
+  {
+    "id":"con8",
+    "nom" : "Console 8",
+    "type" : "Console",
+    "marque" : "XBOX",
+    "prix":"123",
+    "image":"../../assets/produits/consoles/8.jpg"
+  },
+
+  {
+    "id":"sou1",
+    "nom" : "Souris 1",
+    "type" : "Souris",
+    "marque" : "Asus",
+    "prix":"50",
+    "image":"../../assets/produits/souris/1.jpg"
+  },
+
+  {
+    "id":"sou2",
+    "nom" : "Souris 2",
+    "type" : "Souris",
+    "marque" : "Asus",
+    "prix":"50",
+    "image":"../../assets/produits/souris/2.jpg"
+  },
+
+  {
+    "id":"sou3",
+    "nom" : "Souris 3",
+    "type" : "Souris",
+    "marque" : "Asus",
+    "prix":"50",
+    "image":"../../assets/produits/souris/3.jpg"
+  },
+
+  {
+    "id":"sou4",
+    "nom" : "Souris 4",
+    "type" : "Souris",
+    "marque" : "HP",
+    "prix":"187",
+    "image":"../../assets/produits/souris/4.jpg"
+  },
+
+  {
+    "id":"sou5",
+    "nom" : "Souris 5",
+    "type" : "Souris",
+    "marque" : "HP",
+    "prix":"50",
+    "image":"../../assets/produits/souris/5.jpg"
+  },
+
+  {
+    "id":"sou6",
+    "nom" : "Souris 6",
+    "type" : "Souris",
+    "marque" : "HP",
+    "prix":"45",
+    "image":"../../assets/produits/souris/6.jpg"
+  },
+
+  {
+    "id":"sou7",
+    "nom" : "Souris 7",
+    "type" : "Souris",
+    "marque" : "Microsoft",
+    "prix":"2",
+    "image":"../../assets/produits/souris/7.jpg"
+  },
+
+  {
+    "id":"sou8",
+    "nom" : "Souris 8",
+    "type" : "Souris",
+    "marque" : "PCL",
+    "prix":"50",
+    "image":"../../assets/produits/souris/8.jpg"
+  }
+]

@@ -1,0 +1,45 @@
+
+		<form (ngSubmit)="onSubmit()" #inscriptionForm="ngForm" style="text-align: center">
+    			<label>Nom de produit: </label>
+   				<input type="text" class="form-control" required [(ngModel)]="recherche['nom']" name="name" placeholder="ex: casque 1">
+
+   				<label>Catégorie de produit: </label>
+    			<input type="text" class="form-control" required [(ngModel)]="recherche['categorie']" name="type" placeholder="ex: Casque">
+
+   				<label>Marque de produit: </label>
+    			<input type="text" class="form-control" required [(ngModel)]="recherche['marque']" name="marque" placeholder="ex: Asus">
+
+   				<label>Prix de produit: </label>
+    			<input type="number" class="form-control" required [(ngModel)]="recherche['prix']" name="prix" step="10" min="0" placeholder="ex: 15">
+
+
+    			<br>
+    			<br>
+  				<input type="submit" value="Rechercher" style="text-align: center">
+		</form>
+
+		<div>
+			<div id="conteneur">
+				<div *ngFor="let produit of produits" style="text-align: center;">
+					<table  class="element" id="haha">
+						<tr>
+							<td><img src="{{produit.image}}"></td>
+						</tr>
+						<tr>
+							<td>{{produit.nom}}</td>
+						</tr>
+						<tr>
+							<td>{{produit.prix}}€</td>
+						</tr>
+						<tr>
+							<td>{{produit.marque}}</td>
+						</tr>
+					</table>
+					<div *ngIf="(user|async)">
+						<p style="text-align: center;">
+							<input type="button" value="Ajouter au panier" (click)="ajoutBla(produit)">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>		

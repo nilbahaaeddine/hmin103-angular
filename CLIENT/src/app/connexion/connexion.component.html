@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body style="text-align: center;">
+        <form (ngSubmit)="onSubmit()" #inscriptionForm="ngForm">
+            <label>Email</label>
+            <input type="text" placeholder="ex: john.doe@gmail.com" class="form-control" required [(ngModel)]="utilisateur['email']" name="email"/>
+
+            <label>Mot de passe</label>
+            <input type="password" placeholder="password" class="form-control" required [(ngModel)]="utilisateur['password']" name="password"/>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Se connecter"/>
+        </form>
+        <p>{{message}}</p>
+	</body>
+</html>

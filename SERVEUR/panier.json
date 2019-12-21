@@ -1,0 +1,38 @@
+[
+    {
+        "email":"test@test.test",
+        "produits": {
+            "quantite": 1,
+            "id": "cas1",
+            "nom" : "Casque 1",
+            "type" : "Casque",
+            "marque" : "unknown",
+            "prix":"50",
+            "image":"../../assets/produits/casques/1.jpg"
+        }
+    },
+    {
+        "email":"test@test.test",
+        "produits": {
+            "quantite": 1,
+            "id": "cha4",
+            "nom" : "Chargeur 4",
+            "type" : "Chargeur",
+            "marque" : "unknown",
+            "prix":"50",
+            "image":"../../assets/produits/chargeurs/4.jpg"
+        }
+    },
+    {
+        "email":"test@test.test",
+        "produits": {
+            "quantite": 1,
+            "id": "sou8",
+            "nom" : "Souris 8",
+            "type" : "Souris",
+            "marque" : "unknown",
+            "prix":"50",
+            "image":"../../assets/produits/souris/8.jpg"
+        }
+    }
+]

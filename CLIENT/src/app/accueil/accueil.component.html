@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+        <div id="bloc_page">
+			<div id="slider_correction">
+				<div id="slider">
+					<div id="mask">
+						<ul id="image_container">
+							<li><img src="../../assets/slider1.jpg" alt="slider1"></li>
+							<li><img src="../../assets/slider2.jpg" alt="slider2"></li>
+							<li><img src="../../assets/slider3.jpg" alt="slider3"></li>
+							<li><img src="../../assets/slider4.jpg" alt="slider4"></li>
+						</ul>
+					</div>
+					<img src="../../assets/slide/glass.png" alt="glass" id="glass">
+					<ul id="dots">
+						<li class="button1" onClick="changeImage(1)" ></li>
+						<li class="button2" onClick="changeImage(2)" ></li>
+						<li class="button3" onClick="changeImage(3)" ></li>
+						<li class="button4" onClick="changeImage(4)" ></li>
+					</ul>
+					<img src="../../assets/slide/fleche-gauche.png" alt="fleche-gauche" id="fleche_gauche" class="fleche" onClick="prevImage()" >
+					<img src="../../assets/slide/fleche-droite.png" alt="fleche-droite" id="fleche_droite" class="fleche" onClick="nextImage()" >
+				</div>
+			</div>
+			<section>
+				<article>
+					<h1>Mesure incitative de la BDC</h1>
+                    <p>Une très bonne nouvelle pour les petites et grandes entreprises.</p>
+                    <p>La Banque de Développement du Canada a annoncé qu'elle met 200 millions de dollars consacrés à investir dans les technologies de l'information et de la communication. Les fonds consacrés à cette initiative seront distribués sous forme de prêts.</p>
+                    <p>Voilà une occasion en or pour mettre à jour vos équipements informatiques votre site web et votre réseau d'entreprise. Contactez-nous dès maintenant.</p>
+				</article>
+				<aside>
+					<h1>Qui sommes nous?</h1>
+					<p>TechnoZone est une entreprise dévouée à offrir des services et solutions informatique à coût avantageux tout en garantissant le plus haut standard d'éthique et de satisfaction de nos clients. Une entreprise qui évolue depuis 25 ans dans le domaine de l'informatique et de la bureautique.</p>
+				</aside>
+
+			</section>
+
+			<div id="img_marque">
+				<img src="../../assets/Marque.png" alt="marque">
+			</div>
+		</div>
+
+		<script>
+		      // Des Variables pour pouvoir modifier facilement ce qui doit l'être
+		      var secDuration = 5;
+		      var image = 1;
+		      var maxImages = 4;
+		      var slider = document.getElementById('slider');
+		      var timeout
+		      
+		      // La fonction qui change les images. Peut pointer vers une image spécifique, ou bien être appelée vide, pour passer ç celle d'apres
+		      function changeImage(requiredImage) {
+		      
+		        // Début de l'algorithme  .
+		        if (!requiredImage && requiredImage != 0){ //Si nous n'avons pas spécifié une image
+		          if(image < maxImages){// Si l'image n'est pas la dernière, on avance d'une image
+		            image++;
+		          }
+		          else{
+		            image = 1;//Si Nous sommes sur la dernière, on reviens au début 
+		          }
+		        }
+		        else{ // Si nous avont spécifié une image
+		          if(requiredImage > maxImages){//Si nous avont spécifié une image au dela de la dernière, on revient à la première
+		            image = 1;
+		          }
+		          else if(requiredImage < 1){ //Si nous avont spécifié une image 0 ou moins, on vas à la dernière image
+		            image = maxImages;
+		          }
+		          else{
+		            image = requiredImage; // Sinon, on vas à l'image spécifiée.
+		          }
+		        }
+		        //On dis au slider à travers sa classe quel image il doit afficher
+		        slider.className = "image"+image;
+		        
+		        // On nettoie et relance le timeout
+		        clearTimeout(timeout)
+		        timeout = setTimeout("changeImage()",secDuration*1000);
+		      }
+		      
+		      //Deux petites fonctions tres compréhensibles
+		      function nextImage(){
+		        changeImage(image+1);
+		      }
+		      function prevImage(){
+		        changeImage(image-1);
+		      }
+		      
+		      //On met le slide sur l'image par défaut, ici la 1ere
+		      changeImage(1);
+		</script>
+	</body>
+</html>

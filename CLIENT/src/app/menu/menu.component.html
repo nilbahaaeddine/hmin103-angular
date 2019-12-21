@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <div id="titre_principal">
+                <div id="logo">
+                    <img src="../../assets/logo_v1.jpg" alt="TechnoZone">
+                    <h1>TechnoZone</h1>   
+                </div>
+                <h2>Un savoir faire, une innovation...</h2>
+            </div>
+            <nav>
+                <ul *ngIf="!(user|async)" id="nav">
+                    <li>
+                        <a routerLink="/accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a routerLink="/produits">Liste des produits</a>
+                    </li>
+                    <li>
+                        <a routerLink="/categories">Liste des catégoris</a>
+                    </li>
+                    <li>
+                        <a routerLink="/equipe">Notre équipe</a>
+                    </li>
+                    <li>
+                        <a routerLink="/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a routerLink="/utilisateurs/connexion">Se connecter</a>
+                    </li>
+                    <li>
+                        <a routerLink="/utilisateurs/inscription">S'inscrire</a>
+                    </li>
+                </ul>
+                <ul *ngIf="user|async" id="nav">
+                    <li>
+                        <a routerLink="/accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a routerLink="/produits">Liste des produits</a>
+                    </li>
+                    <li>
+                        <a routerLink="/categories">Liste des catégoris</a>
+                    </li>
+                    <li>
+                        <a routerLink="/equipe">Notre équipe</a>
+                    </li>
+                    <li>
+                        <a routerLink="/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a routerLink="/panier">Panier</a>
+                    </li>
+                    <li>
+                        <a (click)="deconnexion()" routerLink="/accueil">Déconnexion de {{user|async}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

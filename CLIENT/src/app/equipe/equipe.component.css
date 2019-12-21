@@ -1,0 +1,445 @@
+/* Eléments principaux de la page */
+
+*
+{
+	font-family: Tahoma;
+	font-weight: normal;
+}
+
+#bloc_page
+{
+	width: 1200px;
+	margin: auto;
+}
+
+section h1, nav a
+{
+	text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 2px 4px 5px #181818;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+#titre_principal
+{
+	display: flex;
+	flex-direction: column;
+  
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#logo img
+{
+	padding: 5px 0 0 5px;
+	width: 99px;
+	height: 100px;
+}
+
+header h1
+{
+	font-size: 2.5em;
+	font-weight: normal;
+	margin: 0 0 0 10px;
+}
+
+header h2
+{
+	font-size: 1.1em;
+	font-weight: normal;
+	margin: 0 0 5px 40px;
+}
+
+#recherche
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+/* Navigation */
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:focus
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+
+#nav ul
+{
+	padding-top: 10px;
+	position: absolute;
+	left: -999em;
+}
+
+#nav li:hover ul
+{
+	left: auto;
+}
+
+
+/* Slider image */
+
+*
+{        
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+#slider
+{
+	background:url('../../assets/slide/background.png');
+	width:960px;
+	height:370px;
+	margin:50px auto;
+	position:relative;
+}
+
+#mask
+{
+ 	width:100%;
+ 	height:100%;
+ 	position:absolute;
+ 	overflow:hidden;
+}
+
+.fleche
+{
+	position:absolute;
+	top:145px;
+	cursor:pointer;
+}
+
+#fleche_gauche
+{
+	left:-17px;
+}
+
+#fleche_droite
+{
+	right: -17px;
+}
+
+#image_container
+{
+	position:absolute;
+	width:400%;
+	height:100%;
+	/* La transition sur tout les navigateurs */
+	/* Chrome */ 
+	-webkit-transition-property:all;
+	-webkit-transition-duration:1s;
+
+	/* Firefox */ 
+	-moz-transition-property:all;
+	-moz-transition-duration:1s;
+
+	/* Opera */ 
+	transition-property:all;
+	transition-duration:1s;
+
+}
+
+/* Les différentes positions du slider */
+.image1 #image_container
+{
+	left:0;
+}
+.image2 #image_container
+{
+	left:-100%;
+}
+.image3 #image_container
+{
+	left:-200%;
+}
+.image4 #image_container
+{
+	left:-300%;
+}
+
+/* Les images */
+#image_container li
+{
+	float:left;
+}
+
+/* L'encart Bleu */
+#encart
+{
+	position:absolute;
+	top:-15px;
+	left:200px;
+	background:url('../../assets/slide/text.png');
+	width:328px;
+	height:396px;
+}
+
+#bouton
+{
+	position:relative;
+	width:244px;
+	height:55px;
+	margin: 300px 0px 0px 40px;
+	cursor:pointer;
+}
+
+/* Les points de navigation */
+#dots
+{
+	position:absolute;
+	width:130px;
+	height:15px;
+	left:425px;
+	bottom:-25px;
+}
+
+/* les points, avec leur background non selectionné */
+#dots li
+{
+	float:left;
+	margin: 0px 2px;
+	width:12px;
+	height:12px;
+	background: url('../../assets/slide/empty-dot.png');
+	cursor:pointer;
+}
+/* Point au survol */
+#dots li:hover
+{
+	background: url('../../assets/slide/selected-dot.png');
+}
+
+/* Point "selectionné". De la même manière que l'image, on change en fonction de la classe de slider */
+.image1 #dots li.button1, .image2 #dots li.button2, .image3 #dots li.button3, .image4 #dots li.button4{
+	background: url('../../assets/slide/selected-dot.png');
+	cursor:normal;
+}
+
+/* Un eyecandy */
+#glass
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#slider_correction
+{
+	align-items: center;
+}
+
+
+/* Corps */
+
+section
+{
+	display: flex;
+	margin-bottom: 20px;
+	width: 1200px;
+}
+
+article, aside
+{
+	text-align: justify;
+}
+
+article
+{
+	margin-right: 20px;
+	flex: 3;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	width: 95%;
+	box-shadow: 0px 2px 5px #1c1a19;
+}
+
+article p
+{
+	font-size: 0.8em;
+}
+
+aside
+{
+	flex: 1.2;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 0.9em;
+}
+
+#equipe h1
+{
+	text-align: center;
+}
+
+footer
+{
+	background: gray;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+#img_contact img, #img_notre_equipe img, #img_maintenance img, #img_marque img, #img_produit img
+{
+	width: 1200px;
+	height: 250px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+#contact_res img
+{
+	width: 50px;
+	height: 50px;
+}
+
+.affiche_tt
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.affiche_cat
+{
+	background: #E0DFDF;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0px 2px 5px #1c1a19;
+}
+
+.affiche-produit
+{
+	width: 200px;
+	height: 200px;
+	border : 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	margin: 5px 30px 5px 30px;
+}
+
+.affiche-produit img
+{
+	border : 1px solid black;
+	width: 190px;
+	height: 150px;
+	margin-left: 4px;
+
+	
+}
+
+#help
+{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+}
+#help .Style5
+{
+	top: 100px;
+}
+
+hr
+{
+	margin: 10px 0 10px 0;
+}
+
+/*CSS formulaire*/
+
+
+input, textarea { 
+    display: block;
+    float: left 250px;
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    /*CHECK THIS LINE*/
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width: 200px;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    } 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%; 
+    } 
+   
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+    } 
+   
+.form label { 
+    margin-left: 10px; 
+    color: #999999; 
+    } 
+   
+.submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background: #CC0033; 
+    border: 0; 
+    font-size: 14px; 
+    color: #FFFFFF; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    }
+
+.noob
+{
+	text-align: center;
+}

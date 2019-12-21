@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+        <div *ngIf="user|async">
+            <div *ngIf="items.length === 0 " class="card-header" id="haha">
+                <p style="text-align: center;">
+                    Votre panier est vide
+                </p>
+            </div>
+            <br>
+            <div *ngIf="items.length > 0 ">
+                <div id="haha">
+                    <p style="text-align: center;">
+                        Votre panier : {{user|async}}
+                    </p>
+                    <p style="text-align: center;">
+                        Total : {{prixTot()}}€
+                    </p>
+                </div>
+                <div id="conteneur">
+                    <div *ngFor="let item of items" style="text-align: center;">
+                        <div style="text-align: center;">
+                            <table  class="element" id="haha">
+                                <tr>
+                                    <td><img src="{{item.produits.image}}"></td>
+                                </tr>
+                                <tr>
+                                    <td>{{item.produits.nom}}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{item.produits.prix}}€</td>
+                                </tr>
+                                <tr>
+                                    <td>{{item.produits.marque}}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{item.produits.quantite}}</td>
+                                </tr>
+                                <tr>
+                                    <input type="button" value="-" (click)="remove(item)">
+                                    <input type="button" value="+" (click)="add(item)">
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+	</body>
+</html>

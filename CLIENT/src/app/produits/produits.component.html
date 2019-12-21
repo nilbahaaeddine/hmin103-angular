@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body style="text-align: center">
+		<div *ngIf="!show; else templateName" style="text-align: center">
+			<input type="button" value="Recherche" (click)="afficherRecherche()">
+		</div>
+		<ng-template #templateName style="text-align: center">
+			<input type="button" value="Cacher recherche" (click)="cacherRecherche()">
+			<app-recherche></app-recherche>
+		</ng-template>
+
+		<br>
+		<br>
+
+		<div>
+			<div>
+				<div  *ngIf="!show" id="conteneur">
+				<div *ngFor="let produit of produits" style="text-align: center;">
+					<table class="element" id="haha">
+						<tr>
+							<td><img src="{{produit.image}}"></td>
+						</tr>
+						<tr>
+							<td>{{produit.nom}}</td>
+						</tr>
+						<tr>
+							<td>{{produit.prix}}€</td>
+						</tr>
+						<tr>
+							<td>{{produit.marque}}</td>
+						</tr>
+					</table>
+					<div *ngIf="(user|async)">
+						<p style="text-align: center;">
+							<input type="button" value="Ajouter au panier" (click)="onSubmit(produit)">
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

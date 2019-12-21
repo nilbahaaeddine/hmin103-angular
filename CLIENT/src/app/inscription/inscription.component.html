@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body style="text-align: center;">
+                <div class="form">
+                        <form (ngSubmit)="onSubmit()" #inscriptionForm="ngForm">
+                                <label>Email</label>
+                                <input class="form-control" name="email" required [(ngModel)]="utilisateur['email']" type="email" placeholder="ex: john.doe@gmail.com">
+
+                                <label>Password</label>
+                                <input class="form-control" type="password" name="pwd" required [(ngModel)]="utilisateur['password']" placeholder="Something secure">
+
+                                <label>Firstname</label>
+                                <input class="form-control" type="text" name="firstName" required [(ngModel)]="utilisateur['firstName']" ngModel placeholder="ex: John">
+
+                                <label>Lastname</label>
+                                <input class="form-control" type="text" name="lastName" required [(ngModel)]="utilisateur['lastName']" placeholder="ex: Doe">
+
+                                <label>Phone</label>
+                                <input class="form-control" type="text" name="phone" required [(ngModel)]="utilisateur['tel']" minlength=10 maxlength=10 placeholder="ex: 06060606">
+
+                                <br>
+                                <br>
+
+                                <input type="submit" value="S'inscrire"/>
+                        </form>
+                </div>
+	</body>
+</html>
